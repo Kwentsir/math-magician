@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Blocks from './Blocks';
-import calculate from './Calculation';
+import calculate from '../logic/calculate';
 
 export default class Calculator extends Component {
   constructor(props) {
@@ -38,46 +38,46 @@ export default class Calculator extends Component {
         code: 'k',
       },
       {
-        label: 7,
+        label: '7',
       },
       {
-        label: 8,
+        label: '8',
       },
       {
-        label: 9,
+        label: '9',
       },
       {
         label: 'x',
         code: 'k',
       },
       {
-        label: 4,
+        label: '4',
       },
       {
-        label: 5,
+        label: '5',
       },
       {
-        label: 6,
+        label: '6',
       },
       {
         label: '-',
         code: 'k',
       },
       {
-        label: 1,
+        label: '1',
       },
       {
-        label: 2,
+        label: '2',
       },
       {
-        label: 3,
+        label: '3',
       },
       {
         label: '+',
         code: 'k',
       },
       {
-        label: 0,
+        label: '0',
       },
       {
         label: '.',
