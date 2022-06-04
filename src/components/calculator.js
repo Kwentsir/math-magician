@@ -3,12 +3,16 @@ import Blocks from './Blocks';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const [calcState, setCalcState] = useState({});
+  const [prevState, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
   const handleCalculate = (label) => {
-    const { total, next, operation } = calcState;
+    const { total, next, operation } = prevState;
     const newObj = calculate({ total, next, operation }, label);
-    setCalcState({
+    setState({
       total: newObj.total,
       operation: newObj.operation,
       next: newObj.next,
@@ -79,7 +83,8 @@ const Calculator = () => {
       code: 'k',
     },
   ];
-  const { total, next } = calcState;
+
+  const { total, next } = prevState;
   return (
     <div className="calculator">
       <div className="calculator__container">
