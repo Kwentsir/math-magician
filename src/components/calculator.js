@@ -106,6 +106,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
+      <h3>Let's do some math!</h3>
       <div className="calculator__container">
         <div className="calculator__cell">{display}</div>
         {calculatorOptions.map((option) => (
