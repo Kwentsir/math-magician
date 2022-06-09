@@ -16,17 +16,5 @@ describe('Adds correctly', () => {
 });
 
 describe('Calculate the subtraction operation', () => {
-  it('Subtracts 2 from 6 return -4', () => {
-    const total = operate(2, 6, '-');
-    expect(total).toBe('-4');
-  });
 
-  it('Subtracts 2 from 0 return 2', () => {
-    const total = operate(2, 0, '-');
-    expect(total).toBe('2');
-  });
-  it('Subtracts 2 from -1 return 3', () => {
-    const total = operate(2, -1, '-');
-    expect(total).toBe('3');
-  });
 });
