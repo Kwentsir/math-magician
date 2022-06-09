@@ -10,8 +10,9 @@
 - [React](https://reactjs.org/)
 - [Sass](https://sass-lang.com/)
 
-## Live Demo
-
+## Live Demo Links
+[Live Demo Link on Heroku](https://kwentsir-math-magician-app.herokuapp.com/)
+[Live Demo Link on Netlify](https://kwentsir-math-magician-app.netlify.app/)
 
 
 
