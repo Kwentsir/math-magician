@@ -30,3 +30,33 @@ describe('Calculate the subtraction operation', () => {
     expect(total).toBe('3');
   });
 });
+
+describe('Multiplication', () => {
+  it('multiplies 4 by 5 should return 20', () => {
+    const result = operate(4, 5, 'x');
+    expect(result).toBe('20');
+  });
+  it('multiplies 4 by 0 should return 0', () => {
+    const result = operate(4, 0, 'x');
+    expect(result).toBe('0');
+  });
+  it('multiplies 4 by -1 should return 0', () => {
+    const result = operate(4, -1, 'x');
+    expect(result).toBe('-4');
+  });
+});
+
+describe('division', () => {
+  it('divides 4 by 2', () => {
+    const result = operate(4, 2, '÷');
+    expect(result).toBe('2');
+  });
+  it('divides 4 by 0', () => {
+    const result = operate(4, 0, '÷');
+    expect(result).toBe("Can't divide by 0.");
+  });
+  it('divides 4 by -2', () => {
+    const result = operate(4, -2, '÷');
+    expect(result).toBe('-2');
+  });
+});
