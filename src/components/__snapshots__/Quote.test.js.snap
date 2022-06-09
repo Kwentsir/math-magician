@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correctlly renders a component should render quote component 1`] = `
+<div
+  className="quote"
+>
+  <p>
+    “Calculators can only calculate - they cannot do mathematics”
+  </p>
+  <h1>
+    -- John A. Van de Walk --
+  </h1>
+</div>
+`;
